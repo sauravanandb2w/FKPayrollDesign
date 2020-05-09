@@ -14,13 +14,18 @@ class DatabaseConnection{
 			Statement s=con.createStatement(); 
 			int Result=s.executeUpdate("CREATE DATABASE Employee");
 			System.out.println("Connection established with mysql server at port 3306...");
-			//s.executeUpdate("use Employee");
-			//s.executeUpdate("create table t1(id int)");
+			
+			s.executeUpdate("use Employee");
+			s.executeUpdate("CREATE TABLE master (`id` INT NOT NULL,`date` VARCHAR(45) NOT NULL,`name` VARCHAR(45) NOT NULL,`earned` INT NOT NULL,`member` TINYINT NOT NULL,`unionAmmount` INT NULL,`mode` VARCHAR(45) NOT NULL,PRIMARY KEY (`id`))");
 			//Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/Employee","root","root");
+			s.executeUpdate("CREATE TABLE weekly_table(`id` INT NOT NULL,`rate` INT NOT NULL,`perunitcost` INT NOT NULL,PRIMARY KEY (`id`));");
+			s.executeUpdate("CREATE TABLE monthly_table(`id` INT NOT NULL,`rate` INT NOT NULL,`commission` INT NOT NULL,PRIMARY KEY (`id`));");
+			
 			System.out.println("Employee Database Created...");
 			//Statement st = con.createStatement();
 			//ResultSet rs = st.executeQuery("select * from students");
 			System.out.println("database connected...");
+			con.close();
 			//rs.first();
 			//System.out.println("id is"+rs.getInt(1));
 
