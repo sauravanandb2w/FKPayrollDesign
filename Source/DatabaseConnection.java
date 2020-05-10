@@ -18,7 +18,7 @@ class DatabaseConnection{
 			s.executeUpdate("use Employee");
 			s.executeUpdate("CREATE TABLE master (`id` INT NOT NULL,`date` VARCHAR(45) NOT NULL,`name` VARCHAR(45) NOT NULL,`earned` INT NOT NULL,`member` TINYINT NOT NULL,`unionAmmount` INT NULL,`mode` VARCHAR(45) NOT NULL,PRIMARY KEY (`id`))");
 			//Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/Employee","root","root");
-			s.executeUpdate("CREATE TABLE weekly_table(`id` INT NOT NULL,`rate` INT NOT NULL,`perunitcost` INT NOT NULL,PRIMARY KEY (`id`));");
+			s.executeUpdate("CREATE TABLE weekly_table(`id` INT NOT NULL,`rate` INT NOT NULL,`hourscount` INT NOT NULL,PRIMARY KEY (`id`));");
 			s.executeUpdate("CREATE TABLE monthly_table(`id` INT NOT NULL,`rate` INT NOT NULL,`commission` INT NOT NULL,PRIMARY KEY (`id`));");
 			
 			System.out.println("Employee Database Created...");
