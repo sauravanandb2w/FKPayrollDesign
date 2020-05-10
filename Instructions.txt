@@ -13,3 +13,16 @@ ________________________________________________________________________________
 	->then run::java -cp "ClassFiles;mysql-connector-java-5.1.49-bin.jar" employee.Employee
 	_________________________________________________________________________
 	Result: New Employee Entries are Successfully inserted into database(employee).
+
+Stage:3)Employees willing to leave jobs can do it.
+
+Stage:4)Union as a separate type is implemented 
+_________________________________________________________________________________________________________
+	->move inside source Directory
+	->then run::javac Main.java Union.java UnionPayBehavior.java -d ClassFiles
+	->then run::java -cp "ClassFiles;mysql-connector-java-5.1.49-bin.jar" Main
+	_________________________________________________________________________
+	Main class is temporarily built to check perfect working of Union package java files.
+	Strategy pattern is used for design implementation.
+
+Stage:5)

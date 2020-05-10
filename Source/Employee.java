@@ -165,12 +165,6 @@
 			    	   break;
 			    default:payment = Mode.PickByOwn;	   	   
 			}
-			// if(option==0)
-			// 	payment = Mode.MailedPayCheck;
-			// else if(option==1)
-			// 	payment = Mode.PickByOwn;
-			// else
-			// 	payment = Mode.DirectBankTransfer;
 
 			System.out.println("Enter your working experience(in years) : ");
 			if(choice=='w'||choice=='W'){
