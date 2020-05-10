@@ -3,7 +3,7 @@ import java.sql.*;
 
 public class Union{
 
-	public UnionPayBehavior upb;
+	private UnionPayBehavior upb;
 	private int festiveCharge 	= 200;
 	private int membershipCharge = 150;
 	private int activityCharge = 50;

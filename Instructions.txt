@@ -1,4 +1,4 @@
-Stage1:1) To create Employee Database consisting of 3 tables(master,weekly_table,monthly_table):
+Stage:1) To create Employee Database consisting of 3 tables(master,weekly_table,monthly_table):
 ________________________________________________________________________________________________________
 	->move inside source Directory
 	->then run::javac DatabaseConnection.java -d ClassFiles
@@ -19,10 +19,17 @@ Stage:3)Employees willing to leave jobs can do it.
 Stage:4)Union as a separate type is implemented 
 _________________________________________________________________________________________________________
 	->move inside source Directory
-	->then run::javac Main.java Union.java UnionPayBehavior.java -d ClassFiles
-	->then run::java -cp "ClassFiles;mysql-connector-java-5.1.49-bin.jar" Main
+	->then run::javac UnionTester.java Union.java UnionPayBehavior.java -d ClassFiles
+	->then run::java -cp "ClassFiles;mysql-connector-java-5.1.49-bin.jar" UnionTester
 	_________________________________________________________________________
-	Main class is temporarily built to check perfect working of Union package java files.
+	UnionTester class is temporarily built to check perfect working of Union package java files.
 	Strategy pattern is used for design implementation.
 
-Stage:5)
+Stage:5)Company as a separate type is Implemented
+_________________________________________________________________________________________________________
+	->move inside source directory
+	->then run::javac CompanyTester.java Company.java CompanyPayBehavior.java -d ClassFiles
+	->then run::java -cp "ClassFiles;mysql-connector-java-5.1.49-bin.jar" CompanyTester	
+	_________________________________________________________________________
+	CompanyTester being the entry point for company related payment stuffs.
+	CompanyPayBehavior interface is used.
