@@ -57,7 +57,7 @@
 		      System.err.println("Got an exception!");
 		      System.err.println(e.getMessage());
 		   }
-	   	    System.out.println(employeeName+" "+currentPaymentMode+" "+employeeId+" "+currentEarnedMoney+" "+joiningDate);
+	   	    System.out.println("INFO UPDATED"+employeeName+" "+currentPaymentMode+" "+employeeId+" "+currentEarnedMoney+" "+joiningDate);
 	}
 	}
 
@@ -244,9 +244,21 @@
 
 
 	public class Employee{
+		private static int option = -1;
+		public Employee(int option){
+			this.option = option;
+			System.out.println("constructor called...");
+			if(option==0){
+				HandleEmployee.add();
+				System.out.println("You are added...");
+			}
+			else{
+				HandleEmployee.delete();
+				System.out.println("You are unregistered...");
+			}
+		}
 		public static void main(String args[]){
-			//HandleEmployee.add();
-			HandleEmployee.delete();
+			
 		}
 	}
 

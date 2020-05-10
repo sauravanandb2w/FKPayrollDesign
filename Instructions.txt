@@ -33,3 +33,13 @@ ________________________________________________________________________________
 	_________________________________________________________________________
 	CompanyTester being the entry point for company related payment stuffs.
 	CompanyPayBehavior interface is used.
+
+Stage:6)A Single Entry Point for the project is simulated
+__________________________________________________________________________________________________________
+	->move inside source directory
+	->then run::javac MainPayroll.java *.java -d ClassFiles
+	->then run::java -cp "ClassFiles;mysql-connector-java-5.1.49-bin.jar"  MainPayroll
+	__________________________________________________________________________
+	Result: MainPayroll class file acts as master of whole project
+			Featuring 12 differnt options to choose.
+			

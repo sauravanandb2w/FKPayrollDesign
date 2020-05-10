@@ -26,7 +26,7 @@ public class Union{
 		return activityCharge;
 	}
 
-	public static void Addmember(int employeeId){
+	public static void AddMember(int employeeId){
 		try{
 		// DB Connection
 		Class.forName("com.mysql.jdbc.Driver");
