@@ -1,0 +1,19 @@
+currently all commits is in Dev branch.
+__________________________________________________
+1) install mysql in your system.
+2) setup mysql with jdbc using :
+	-> go to Source directory
+		-->then run::javac DatabaseConnection.java -d ClassFiles
+		-->then run::java -cp "ClassFiles;mysql-connector-java-5.1.49-bin.jar" DatabaseConnection
+		__________________________________________
+		this will make database schema in your system
+		__________________________________________
+
+3) Once db is set:
+	->move inside source directory
+		-->then run::javac MainPayroll.java *.java -d ClassFiles
+		-->then run::java -cp "ClassFiles;mysql-connector-java-5.1.49-bin.jar"  MainPayroll
+		__________________________________________
+		SuccessFully Done : incase of any Query or Error please
+							reachout me at saurav.anand@flipkart.com
+		__________________________________________
