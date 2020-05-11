@@ -16,11 +16,11 @@
 	public void pay(){
 		try{
 		int festiveCharge = new Union().getFestiveCharge();
-		System.out.print(festiveCharge);
+		//System.out.print(festiveCharge);
 		// DB Connection
 		Class.forName("com.mysql.jdbc.Driver");
 
-		System.out.print(festiveCharge);
+		//System.out.print(festiveCharge);
 
 	    Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/employee","root","root");
 

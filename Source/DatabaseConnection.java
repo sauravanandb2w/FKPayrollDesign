@@ -2,18 +2,20 @@ import java.sql.DriverManager;
 import java.sql.Connection;
 import java.sql.Statement;
 import java.sql.ResultSet;
-class DatabaseConnection{
+public class DatabaseConnection{
 	public static void main(String args[]){
 		try{
 			System.out.println("setting up...");
 			Class.forName("com.mysql.jdbc.Driver");
-			System.out.println("setting up...");
+			System.out.println("Class Connector Found up...");
 
 
 			Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/?","root","root");
 			Statement s=con.createStatement(); 
-			int Result=s.executeUpdate("CREATE DATABASE Employee");
 			System.out.println("Connection established with mysql server at port 3306...");
+		
+			int Result=s.executeUpdate("CREATE DATABASE Employee");
+			System.out.println("Employee database created in yout table....");
 			
 			s.executeUpdate("use Employee");
 			s.executeUpdate("CREATE TABLE master (`id` INT NOT NULL,`date` VARCHAR(45) NOT NULL,`name` VARCHAR(45) NOT NULL,`earned` INT NOT NULL,`member` TINYINT NOT NULL,`unionAmmount` INT NULL,`mode` VARCHAR(45) NOT NULL,PRIMARY KEY (`id`))");
